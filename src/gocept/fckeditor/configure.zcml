@@ -1,0 +1,8 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <resourceLibrary name="gocept.fckeditor">
+    <directory source="fckeditor" />
+  </resourceLibrary>
+
+</configure>
+
