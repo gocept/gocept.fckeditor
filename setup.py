@@ -11,7 +11,7 @@ setup(
     long_description = "XXX",
     license = "ZPL 2.1",
     url='https://svn.gocept.com/repos/gocept/gocept.fckeditor',
-
+    zip_safe = False,
     packages = find_packages('src'),
     include_package_data = True,
     package_dir = {'':'src'},
