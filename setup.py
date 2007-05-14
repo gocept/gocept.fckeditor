@@ -13,8 +13,12 @@ setup(
     url='https://svn.gocept.com/repos/gocept/gocept.fckeditor',
     zip_safe = False,
     packages = find_packages('src'),
+    package_dir = {'': 'src'},
     include_package_data = True,
-    package_dir = {'':'src'},
+    package_data = {
+        '': ['*.zcml'],
+        'gocept.fckeditor': ['fckeditor/*'],
+    },
     namespace_packages = ['gocept'],
     install_requires = [
         'setuptools',
