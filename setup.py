@@ -24,6 +24,13 @@ setup(
     namespace_packages = ['gocept'],
     install_requires = [
         'setuptools',
-        'zc.resourcelibrary'
-    ]
+        'zc.resourcelibrary',
+    ],
+    extras_require = {
+        'test': ['zope.testing',
+                 'zope.testbrowser',
+                 'zope.app.testing',
+                 'zope.app.zcmlfiles',
+                ],
+    },
     )
