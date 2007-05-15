@@ -1,8 +1,18 @@
-<configure xmlns="http://namespaces.zope.org/zope">
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser">
 
   <resourceLibrary name="gocept.fckeditor">
     <directory source="fckeditor" />
   </resourceLibrary>
+
+  <browser:page
+    for="zope.app.container.interfaces.IContainer"
+    name="fckeditor-link-browser.html"
+    template="connector.pt"
+    class=".connector.FCKEditorBrowser"
+    permission="zope.View"
+    />
+
 
 </configure>
 
