@@ -1,9 +1,12 @@
+# Copyright (c) 2007 gocept gmbh & co. kg
+# See also LICENSE.txt
+# $Id$
+
 import os
 from setuptools import setup, find_packages
 
-name = "gocept.fckeditor"
 setup(
-    name = name,
+    name = 'gocept.fckeditor',
     version = "2.4",
     author = "Christian Zagrodnick",
     author_email = "cz@gocept.com",
@@ -11,14 +14,13 @@ setup(
     long_description = "XXX",
     license = "ZPL 2.1",
     url='https://svn.gocept.com/repos/gocept/gocept.fckeditor',
-    zip_safe = False,
+
     packages = find_packages('src'),
     package_dir = {'': 'src'},
+
     include_package_data = True,
-    package_data = {
-        '': ['*.zcml'],
-        'gocept.fckeditor': ['fckeditor/*'],
-    },
+    zip_safe = False,
+
     namespace_packages = ['gocept'],
     install_requires = [
         'setuptools',
