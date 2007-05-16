@@ -1,2 +1,0 @@
-recursive-include src/gocept/fckeditor *.zcml
-recursive-include src/gocept/fckeditor/fckeditor *
