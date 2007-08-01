@@ -94,7 +94,13 @@ function GetFoldersAndFilesCallBack( fckXml )
 	for ( var i = 0 ; i < oNodes.length ; i++ )
 	{
 		var sFolderName = oNodes[i].attributes.getNamedItem('name').value ;
-		oHtml.Append( oListManager.GetFolderRowHtml( sFolderName, sCurrentFolderPath + sFolderName + "/" ) ) ;
+		var sFolderTitle = oNodes[i].attributes.getNamedItem('title');
+        if (sFolderTitle == null) {
+            sFolderTitle = sFolderName;
+        } else {
+            sFolderTitle = sFolderTitle.value;
+        }
+		oHtml.Append( oListManager.GetFolderRowHtml( sFolderTitle, sCurrentFolderPath + sFolderName + "/" ) ) ;
 	}
 
 	// Add the Files.

@@ -134,7 +134,13 @@ function GetFoldersCallBack( fckXml )
 	for ( var i = 0 ; i < oNodes.length ; i++ )
 	{
 		var sFolderName = oNodes[i].attributes.getNamedItem('name').value ;
-		oListManager.AddItem( sFolderName, sCurrentFolderPath + sFolderName + "/" ) ;
+		var sFolderTitle = oNodes[i].attributes.getNamedItem('title');
+        if (sFolderTitle == null) {
+            sFolderTitle = sFolderName;
+        } else {
+            sFolderTitle = sFolderTitle.value;
+        }
+		oListManager.AddItem( sFolderTitle, sCurrentFolderPath + sFolderName + "/" ) ;
 	}
 
 	OpenFolder( sActiveFolder ) ;
