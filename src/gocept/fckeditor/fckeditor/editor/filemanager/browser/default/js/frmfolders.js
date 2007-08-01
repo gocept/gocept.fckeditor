@@ -62,8 +62,8 @@ oListManager.ShowUpFolder = function( upFolderPath )
 function CheckLoaded()
 {
 	if ( window.top.IsLoadedActualFolder
-		&& window.top.IsLoadedCreateFolder
-		&& window.top.IsLoadedUpload
+		// && window.top.IsLoadedCreateFolder
+		// && window.top.IsLoadedUpload
 		&& window.top.IsLoadedResourcesList )
 	{
 		window.clearInterval( iIntervalId ) ;
@@ -92,8 +92,6 @@ function OpenFolder( folderPath )
 
 	// Set the current folder in all frames.
 	window.parent.frames['frmActualFolder'].SetCurrentFolder( oConnector.ResourceType, folderPath ) ;
-	window.parent.frames['frmCreateFolder'].SetCurrentFolder( oConnector.ResourceType, folderPath ) ;
-	window.parent.frames['frmUpload'].SetCurrentFolder( oConnector.ResourceType, folderPath ) ;
 
 	// Load the resources list for this folder.
 	window.parent.frames['frmResourcesList'].LoadResources( oConnector.ResourceType, folderPath ) ;
