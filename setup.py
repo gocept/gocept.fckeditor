@@ -2,7 +2,6 @@
 # See also LICENSE.txt
 # $Id$
 
-import os
 from setuptools import setup, find_packages
 
 setup(
