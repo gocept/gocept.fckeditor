@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This dialog is shown when, for some reason (usually security settings),
+ * the user is not able to paste data from the clipboard to the editor using
+ * the toolbar buttons or the context menu.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex, nofollow" />
+	<script src="common/fck_dialog_common.js" type="text/javascript"></script>
+	<script type="text/javascript" src="fck_paste/fck_paste.js"></script>
+
+</head>
+<body style="overflow: hidden">
+	<table cellspacing="0" cellpadding="0" width="100%" border="0" style="height: 98%">
+		<tr>
+			<td>
+				<div id="xSecurityMsg" style="display: none">
+					<span fcklang="DlgPasteSec">Because of your browser security settings,
+						the editor is not able to access your clipboard data directly. You are required
+						to paste it again in this window.</span><br />
+					&nbsp;
+				</div>
+				<div>
+					<span fcklang="DlgPasteMsg2">Please paste inside the following box using the keyboard
+						(<strong>Ctrl+V</strong>) and hit <strong>OK</strong>.</span><br />
+					&nbsp;
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td id="xFrameSpace" valign="top" height="100%" style="border: #000000 1px solid">
+				<textarea id="txtData" cols="80" rows="5" style="border: #000000 1px; display: none;
+					width: 99%; height: 98%"></textarea>
+			</td>
+		</tr>
+		<tr id="oWordCommands">
+			<td>
+
+					<input id="chkRemoveFont" type="checkbox" checked="checked" />
+					<label for="chkRemoveFont" fcklang="DlgPasteIgnoreFont">
+						Ignore Font Face definitions</label>
+					<br />
+					<input id="chkRemoveStyles" type="checkbox" />
+					<label for="chkRemoveStyles" fcklang="DlgPasteRemoveStyles">
+						Remove Styles definitions</label>
+
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
