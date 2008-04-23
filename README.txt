@@ -2,7 +2,12 @@ FCKeditor integration into Zope 3
 =================================
 
 Changes
-++++++
++++++++
+
+2.6.1 (2008-04-23)
+------------------
+
+- Fixed context menu position in div with scrollbar.
 
 2.6 (2008-04-23)
 ----------------
