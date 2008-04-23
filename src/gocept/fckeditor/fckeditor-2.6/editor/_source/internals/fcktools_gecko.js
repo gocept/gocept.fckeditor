@@ -131,7 +131,15 @@ FCKTools.CreateXmlObject = function( object )
 
 FCKTools.GetScrollPosition = function( relativeWindow )
 {
-	return { X : relativeWindow.pageXOffset, Y : relativeWindow.pageYOffset } ;
+    var x = 0;
+    var y = 0;
+    while ( relativeWindow && typeof relativeWindow.scrollTop == 'number' && typeof relativeWindow.scrollLeft == 'number' )
+    {
+        x += relativeWindow.scrollLeft;
+        y += relativeWindow.scrollTop;
+        relativeWindow = relativeWindow.parentNode;
+    }
+	return { X : x, Y : y } ;
 }
 
 FCKTools.AddEventListener = function( sourceObject, eventName, listener )

@@ -235,6 +235,11 @@ FCKPanel.prototype.Show = function( x, y, relElement, width, height )
 			oPos.y -= nPos.y ;
 		}
 
+        // Plus the offsets provided by parent of the master iframe.
+        var oScrollPosition = FCKTools.GetScrollPosition( window.FCK.LinkedField.parentNode ) ;
+        oPos.x += oScrollPosition.X;
+        oPos.y += oScrollPosition.Y;
+
 		if ( this.IsRTL && !this.IsContextMenu )
 			x = ( x * -1 ) ;
 
