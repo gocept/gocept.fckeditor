@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'gocept.fckeditor',
-    version = "2.6.4dev",
+    version = "2.6.4.1",
     author = "Christian Zagrodnick",
     author_email = "cz@gocept.com",
     description = "FCKEditor integration into Zope 3",
