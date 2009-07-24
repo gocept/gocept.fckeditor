@@ -2,7 +2,7 @@
   xmlns:browser="http://namespaces.zope.org/browser">
 
   <resourceLibrary name="gocept.fckeditor">
-    <directory source="fckeditor-2.6.3" />
+    <directory source="fckeditor-2.6.4.1" />
   </resourceLibrary>
 
   <browser:page
