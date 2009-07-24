@@ -1,0 +1,13 @@
+Index: fckeditor-2.6.4.1/editor/dialog/fck_paste.html
+===================================================================
+--- fckeditor-2.6.4.1/editor/dialog/fck_paste.html	(revision 29930)
++++ fckeditor-2.6.4.1/editor/dialog/fck_paste.html	(working copy)
+@@ -128,7 +128,7 @@
+ 			sHtml = oBody.innerHTML ;
+ 
+ 		// Fix relative anchor URLs (IE automatically adds the current page URL).
+-		var re = new RegExp( window.location + "#", "g" ) ;
++                var re = window.location.href + "#";
+ 		sHtml = sHtml.replace( re, '#') ;
+ 	}
+ 	else
