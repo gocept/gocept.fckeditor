@@ -4,8 +4,11 @@ FCKeditor integration into Zope 3
 Changes
 +++++++
 
-2.6.4 (unreleased)
-------------------
+2.6.4.1 (unreleased)
+--------------------
+
+- Updated to FCKeditor 2.6.4.1
+
 
 2.6.3 (2008-11-10)
 ------------------

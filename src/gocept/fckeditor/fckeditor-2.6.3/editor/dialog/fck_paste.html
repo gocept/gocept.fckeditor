@@ -127,7 +127,7 @@ function Ok()
 			sHtml = oBody.innerHTML ;
 
 		// Fix relative anchor URLs (IE automatically adds the current page URL).
-		var re = new RegExp( window.location + "#", "g" ) ;
+                var re = window.location.href + "#";
 		sHtml = sHtml.replace( re, '#') ;
 	}
 	else
