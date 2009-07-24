@@ -9,6 +9,8 @@ Changes
 
 - Updated to FCKeditor 2.6.4.1
 
+- Applied a patch to allow pasting when there is a plus in the URL.
+
 
 2.6.3 (2008-11-10)
 ------------------
