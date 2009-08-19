@@ -4,7 +4,7 @@ FCKeditor integration into Zope 3
 Changes
 +++++++
 
-2.6.4.1-1 (unreleased)
+2.6.4.1-1 (2009-08-19)
 ----------------------
 
 - Provide a resourcelibrary that includes editor.js (so JavaScript can start
