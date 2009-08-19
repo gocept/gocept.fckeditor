@@ -5,6 +5,11 @@
     <directory source="fckeditor-2.6.4.1" />
   </resourceLibrary>
 
+  <resourceLibrary name="gocept.fckeditor.editor" require="gocept.fckeditor">
+    <directory source="fckeditor-2.6.4.1"
+      include="fckeditor.js"/>
+  </resourceLibrary>
+
   <browser:page
     for="zope.app.container.interfaces.IContainer"
     name="fckeditor-link-browser.html"
