@@ -4,6 +4,13 @@ FCKeditor integration into Zope 3
 Changes
 +++++++
 
+2.6.4.1-2 (unreleased)
+----------------------
+
+- Provide fanstatic packaging (use setup.py extra ``fanstatic`` and depend on
+  ``gocept.fckeditor.resources.fckeditor``)
+
+
 2.6.4.1-1 (2009-08-19)
 ----------------------
 
@@ -35,7 +42,7 @@ Changes
 - Applied validhtml.patch to make sure Zope can publish the resources
   (see http://dev.fckeditor.net/ticket/2056)
 
-2.4 
+2.4
 ---
 
 - first release
