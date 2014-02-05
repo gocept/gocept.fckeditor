@@ -4,7 +4,7 @@ FCKeditor integration into Zope 3
 Changes
 +++++++
 
-2.6.4.1-2 (unreleased)
+2.6.4.1-2 (2014-02-05)
 ----------------------
 
 - Provide fanstatic packaging (use setup.py extra ``fanstatic`` and depend on
