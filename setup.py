@@ -31,5 +31,11 @@ setup(
             'zope.app.testing',
             'zope.app.zcmlfiles',
         ],
+        'fanstatic': ['fanstatic'],
+    },
+    entry_points={
+        'fanstatic.libraries': [
+            'gocept_fckeditor=gocept.fckeditor.resources:lib',
+        ],
     },
 )
