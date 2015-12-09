@@ -1,6 +1,3 @@
-# Copyright (c) 2007-2009 gocept gmbh & co. kg
-# See also LICENSE.txt
-
 from setuptools import setup, find_packages
 
 setup(
@@ -11,7 +8,7 @@ setup(
     description="FCKEditor integration into Zope 3",
     long_description="XXX",
     license="ZPL 2.1",
-    url='https://svn.gocept.com/repos/gocept/gocept.fckeditor',
+    url='https://bitbucket.org/gocept/gocept.fckeditor',
 
     packages=find_packages('src'),
     package_dir={'': 'src'},
